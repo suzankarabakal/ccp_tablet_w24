@@ -1,0 +1,390 @@
+body{
+    background-color: #FDAAB4;
+    margin: 10px;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 48pt;
+    text-align: center;
+    font-family: 'Gill Sans MT';
+    font-weight: bold;
+    color: #41300A;
+    padding: 10px;
+    background: #FDAAB4;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+h1:hover{
+    background: #ffffff;
+}
+
+h2{
+    font-size: 32pt;
+    font-family: 'Gill Sans MT';
+    color: #41300A;
+    padding: 10px;
+}
+
+h3{
+    font-size: 24pt;
+    font-family: 'Gill Sans MT';
+    color: #41300A;
+    padding: 10px;
+}
+
+p{
+    line-height: normal;
+    padding-left: 10px;
+    color: #41300A;
+}
+
+nav{
+    background-color: #CC4363;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 30px;
+    color:#ffffff;
+    font-size: 16pt;
+}
+
+
+ul{
+    padding: 10px;
+}
+
+ol{
+    padding: 10px;
+    margin: 10px;
+}
+
+ul li{
+    margin: 10px;
+    text-align: center;
+
+}
+
+img{
+    border-radius: 30px;
+}
+
+#selected{
+    background-color: #FDAAB4;
+    color: #41300A;
+    font-weight: bold;
+    border-radius: 10PX;
+    padding: 10px;
+}
+
+.skip{
+    position: absolute;
+    left: -9999px;
+
+}
+
+.skip:focus{
+    left:0;
+}
+
+.recipe-grid-container{
+    grid-template-columns: 1fr;
+}
+.travel-grid-container{
+    grid-template-columns: 1fr;
+}
+
+img{
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    border: 5px dotted white;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+    .animation {
+      animation-name: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    nav ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .pet-grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding: 10px;
+        width: 90%;
+        margin: 5%;
+        justify-content: center;
+    }
+    
+    .pet-item1 {
+        grid-column: 1/-1;
+        text-align: center;
+        border: 5px dotted white;
+        border-radius: 30px;
+    }
+
+    .pet-item2 {
+        grid-column: 1/ span 1;
+        grid-row: 3/span 3;
+    }
+
+    .pet-item3 {
+        grid-column: 2/ span 1;
+        grid-row: 3/span 1;
+    }
+
+    .pet-item4 {
+        grid-column: 2/ span 1;
+        grid-row: 4/span 1;
+    }
+
+    .pet-item5 {
+        grid-column: 2/ span 1;
+        grid-row: 5/span 1;
+    }
+
+    .pet-item6 {
+        grid-column: 1/-1;
+        text-align: center;
+        border: 5px dotted white;
+        border-radius: 30px;
+    }
+    .recipe-grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding: 10px;
+        width: 90%;
+        margin: 5%;
+        justify-content: center;
+    }
+    
+    
+    .recipe-item1 {
+        box-sizing: border-box;
+        grid-column: 1/-1;
+        text-align: center;
+        border: 5px dotted white;
+        border-radius: 30px;
+    }
+    
+    .recipe-item2 {
+        box-sizing: border-box;
+        width: 100%;
+        border: 5px dotted white;
+        border-radius: 30px;
+        padding: 10px;
+    }
+    
+    .recipe-item3 {
+        box-sizing: border-box;
+        width: 100%;
+        
+    }
+    
+    .recipe-item4 {
+        box-sizing: border-box;
+        width: 100%;
+        border: 5px dotted white;
+        border-radius: 30px;
+        padding: 10px;
+    }
+    
+    .recipe-item5 {
+        box-sizing: border-box;
+        width: 100%;
+        border: 5px dotted white;
+        border-radius: 30px;
+        padding: 10px;
+    }
+    
+    .recipe-item6 {
+        box-sizing: border-box;
+        width: 100%;
+        
+    }
+    
+    .recipe-item7 {
+        box-sizing: border-box;
+        width: 100%;
+        
+    }
+    
+    .travel-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding: 10px;
+        width: 90%;
+        margin: 5%;
+        justify-content: center;
+    }
+    
+    .travel-item1 {
+        box-sizing: border-box;
+        grid-column: 1/-1;
+        text-align: center;
+        border: 5px dotted white;
+        border-radius: 30px;
+    }
+    
+    .travel-item2 {
+        box-sizing: border-box;
+        width: 100%;
+        
+    }
+    
+    .travel-item3 {
+        box-sizing: border-box;
+        width: 100%;
+        
+    }
+    
+    .travel-item4 {
+        box-sizing: border-box;
+        grid-column: 1/-1;
+        text-align: center;
+        width: 100%;
+        border: 5px dotted white;
+        border-radius: 30px;
+        padding: 10px;
+    }
+    
+    .travel-item5 {
+        box-sizing: border-box;
+        width: 100%;
+        border: 5px dotted white;
+        border-radius: 30px;
+        padding: 10px;
+    }
+    
+    .travel-item6 {
+        box-sizing: border-box;
+        width: 100%;
+        border: 5px dotted white;
+        border-radius: 30px;
+        padding: 10px;
+    }
+    
+    .travel-item7 {
+        box-sizing: border-box;
+        grid-column: 1/-1;
+        text-align: center;
+        width: 100%;
+        border: 5px dotted white;
+        border-radius: 30px;
+        padding: 10px;
+    }
+    
+    .travel-item8 {
+        box-sizing: border-box;
+        width: 100%;
+        
+    }
+    
+    .travel-item9 {
+        box-sizing: border-box;
+        width: 100%;
+        
+    }
+    
+    .travel-item10 {
+        box-sizing: border-box;
+        width: 100%;
+        
+    }
+    
+    .travel-item11 {
+        box-sizing: border-box;
+        width: 100%;
+        
+    }
+    }
+
+@media screen and (min-width: 992px){
+    .recipe-grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+        padding: 10px;
+        width: 90%;
+        margin: 5%;
+        justify-content: center;
+    }
+
+    .recipe-item1{
+        grid-column: 1/-1;
+        text-align: center;
+        border: 5px dotted white;
+        border-radius: 30px;
+    }
+
+    .recipe-item2{
+        grid-row:2/span 1;
+        grid-column: 2/span 2;
+    }
+
+    .recipe-item3{
+        grid-row:2/span 1;
+        grid-column: 1/span 1;
+    }
+
+    .recipe-item4{
+        grid-row:3/span 2;
+        grid-column: 1/span 1;
+    }
+
+    .recipe-item5{
+        grid-row:3/span 2;
+        grid-column: 2/span 1;
+    }
+
+    .travel-grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 25px;
+        padding: 10px;
+        width: 90%;
+        margin: 5%;
+        justify-content: center;
+    }
+
+    .travel-item1{
+        grid-column: 1/-1;
+        
+    }
+    
+    .travel-item4{
+        grid-row:4/span 1;
+    }
+
+    .travel-item2{
+        grid-column: span 2;
+    }
+
+    .travel-item3{
+        grid-column: span 2;
+    }
+
+    .travel-item5{
+        grid-column: span 2;
+    }
+
+    .travel-item6{
+        grid-column: span 2;
+    }
+}
